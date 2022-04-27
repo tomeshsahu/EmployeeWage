@@ -8,8 +8,8 @@ namespace EmployeeWage
 {
     public class UC3_EmpWage
     {
-        public static void Main(String[] args)
-        {
+       public static void main(String[] args)
+        { 
             //Constant
             const int Is_FullTime = 1;
             const int Is_PartTime = 2;

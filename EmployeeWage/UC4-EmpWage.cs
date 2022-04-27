@@ -8,8 +8,8 @@ namespace EmployeeWage
 {
     public class UC4_EmpWage
     {
-        public static void Main(String[] args)
-        {
+        public static void main(String[] args)
+        { 
             //Constant
             const int Is_FullTime = 1;
             const int Is_PartTime=2;
@@ -19,7 +19,7 @@ namespace EmployeeWage
             int EmpWage = 0;
 
             Random random = new Random();
-            int check = random.Next(0, 2);
+            int check = random.Next(0, 3);
             switch(check)
             {
                 case Is_FullTime:
