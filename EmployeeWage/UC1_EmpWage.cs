@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmpWage
+namespace EmpWageloyeeWage
 {
-    public class UC1_EmplyeeWage
-    {      
+    public class UC1_EmpWage
+    {
         public static void main(String[] args)
         {
             const int Is_FullTime = 1;
