@@ -19,7 +19,7 @@ namespace EmployeeWage
             int EmpWage = 0;
 
             Random random = new Random();
-            int check = random.Next(0, 2);
+            int check = random.Next(0, 3);
             switch(check)
             {
                 case Is_FullTime:
