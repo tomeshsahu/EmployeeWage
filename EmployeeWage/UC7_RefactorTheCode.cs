@@ -47,15 +47,7 @@ namespace EmployeeWage
             }
         }
     }
-        class UC7_RefactorTheCode
-        {
-            public static void Main(String[] args)
-            {
-                EmpWage obj = new EmpWage();
-                {
-                    obj.CodeRefactor();
-                }
-            }
-        }
-    }
+}
+      
+    
     
