@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    public class UC6_EmpWage
+    public class EmpWage
     {
-        public static void main(String[] args)
+        const int Is_FullTime = 1;
+        const int Is_PartTime = 2;
+        const int EmpWagePerHrs = 20;
+        const int EmpWorkingDays = 20;
+        const int EmpMaxWorkingHrs = 100;
+        //Variable
+        public void CodeRefactor()
         {
-            //Constant
-            const int Is_FullTime = 1;
-            const int Is_PartTime = 2;
-            const int EmpWagePerHrs = 20;
-            const int EmpWorkingDays = 20;
-            const int EmpMaxWorkingHrs = 100;
-            //Variable
             int EmpHrs = 0;
             int EmpWage = 0;
             int totalEmpHrs = 0;
             int Salary = 0;
+
             for (int i = 1; i <= EmpWorkingDays; i++)
             {
                 Random random = new Random();
@@ -38,16 +38,24 @@ namespace EmployeeWage
                         break;
                 }
                 EmpWage = EmpHrs * EmpWagePerHrs;
-                Console.WriteLine($"Day{i}= {EmpWage}");
+                Console.WriteLine($"Day{i} uc7= {EmpWage}");
                 totalEmpHrs = totalEmpHrs + EmpHrs;
-                if(totalEmpHrs<=100)
+                if (totalEmpHrs <= 100)
                 {
                     Salary = totalEmpHrs * EmpWagePerHrs;
                 }
-
             }
-            Console.WriteLine($"Total Hrs = {totalEmpHrs}");
-            Console.WriteLine($"Total Salary= {Salary}");
         }
     }
-}
+        class UC7_RefactorTheCode
+        {
+            public static void Main(String[] args)
+            {
+                EmpWage obj = new EmpWage();
+                {
+                    obj.CodeRefactor();
+                }
+            }
+        }
+    }
+    
