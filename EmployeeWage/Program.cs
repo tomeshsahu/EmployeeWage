@@ -7,7 +7,7 @@ bool check = true;
 while (check)
 {
 
-    Console.WriteLine("1.UC1_Employee Attendance\n2.UC2_Employee FullTime\n3.UC3_Employee PartTime\n4.UC4_Emp Wage Switch Case\n5.UC5_EmpWage Working Days\n6.UC6_EmpWage Max Hrs\n7.UC7_EmpWage Refactor\n8.UC8_EmpWage MultipleCompany\n9.Vending Machine\n10.Coupon Number\n11.Monthly Payment");
+    Console.WriteLine("1.UC1_Employee Attendance\n2.UC2_Employee FullTime\n3.UC3_Employee PartTime\n4.UC4_Emp Wage Switch Case\n5.UC5_EmpWage Working Days\n6.UC6_EmpWage Max Hrs\n7.UC7_EmpWage Refactor\n8.UC8_EmpWage MultipleCompany\n9.UC9_EmpWageCompany");
     Console.WriteLine("Please Enter the Number Which program you want to run");
     int option = Convert.ToInt32(Console.ReadLine());
 
@@ -55,6 +55,12 @@ while (check)
             obj88.MCompany();
             break;
 
+        case 9:
+            UC9_EmpWageCompany obj9 = new UC9_EmpWageCompany("DMart", 20, 90, 20);
+            UC8_EmpWage obj99 = new UC8_EmpWage("Relance", 25, 80, 25);
+            obj9.MCompany();
+            obj99.MCompany();
+            break;
 
         case 0:
             check = false;
