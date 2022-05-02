@@ -8,7 +8,7 @@ namespace EmployeeWage
 {
     public class UC5_EmpWage
     {
-        public static void main(string[] args)
+        public void UC5()
         {
             //Constant
             const int Is_FullTime = 1;
@@ -37,10 +37,10 @@ namespace EmployeeWage
                 }
                 EmpWage = EmpHrs * EmpWagePerHrs;
                 Console.WriteLine($"Day{i}= {EmpWage}");
-                totalEmpHrs +=EmpHrs;
+                totalEmpHrs += EmpHrs;
             }
-            
-            Console.WriteLine($"Total Salary= {totalEmpHrs * EmpWagePerHrs}");
+
+            Console.WriteLine($"Total Salary= {totalEmpHrs * EmpWagePerHrs}"+"\n");
         }
     }
 }

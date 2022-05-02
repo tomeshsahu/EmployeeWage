@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    public class MultiPleCompany
+    public class UC8_EmpWage
     {
         //Constant
         public const int FullTime = 1;
@@ -18,7 +18,7 @@ namespace EmployeeWage
        public int WorkingDay;
         
         
-        public MultiPleCompany(string companyName,int EmpRatePerHrs,int MonthlyMaxPerHrs, int WorkingDay)
+        public UC8_EmpWage(string companyName,int EmpRatePerHrs,int MonthlyMaxPerHrs, int WorkingDay)
         {
             this.Companyname = companyName;
             this.EmpRatePerHrs= EmpRatePerHrs;
@@ -63,19 +63,10 @@ namespace EmployeeWage
             }
             totalSalary = totalHrs * EmpRatePerHrs;
             Console.WriteLine("Total Hrs= " + totalHrs);
-            Console.WriteLine("Total Salary= "+totalSalary);
+            Console.WriteLine("Total Salary= "+totalSalary+"\n");
             
         }
     }
 
-    public class UC8_MultipleCompany
-    {
-        public static void Main(String[] args)
-        {
-            MultiPleCompany uc8 = new MultiPleCompany("xamptech", 20, 100, 20);
-            MultiPleCompany uc81 = new MultiPleCompany("DMart", 18, 80, 25);
-            uc8.MCompany();
-            uc81.MCompany();
-        }
-    }
+   
 }

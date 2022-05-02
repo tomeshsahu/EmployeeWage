@@ -8,7 +8,7 @@ namespace EmployeeWage
 {
     public class UC2_EmployeeWage
     {
-        public static void main(String[] args)
+        public void UC2()
         {
             //Constant
             const int Is_FullTime = 1;
@@ -25,9 +25,9 @@ namespace EmployeeWage
             }
             else
             {
-                Console.WriteLine("Employee Is Absent");
+                Console.WriteLine("Employee Is Absent"+"\n");
             }
-            Console.WriteLine($"Employee Wage= { EmpHrs * EmpWagePerHrs}");
+            Console.WriteLine($"Employee Wage= { EmpHrs * EmpWagePerHrs}\n");
         }
     }
 }

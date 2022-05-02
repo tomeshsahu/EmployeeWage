@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    public class EmpWage
+    public class UC7_EmpWage
     {
         const int Is_FullTime = 1;
         const int Is_PartTime = 2;
@@ -14,7 +14,7 @@ namespace EmployeeWage
         const int EmpWorkingDays = 20;
         const int EmpMaxWorkingHrs = 100;
         //Variable
-        public void CodeRefactor()
+        public void UC7()
         {
             int EmpHrs = 0;
             int EmpWage = 0;
@@ -38,13 +38,14 @@ namespace EmployeeWage
                         break;
                 }
                 EmpWage = EmpHrs * EmpWagePerHrs;
-                Console.WriteLine($"Day{i} uc7= {EmpWage}");
+                Console.WriteLine($"Day{i} = {EmpWage}");
                 totalEmpHrs = totalEmpHrs + EmpHrs;
                 if (totalEmpHrs <= 100)
                 {
                     Salary = totalEmpHrs * EmpWagePerHrs;
                 }
             }
+            Console.WriteLine("Total Salary= "+Salary);
         }
     }
 }

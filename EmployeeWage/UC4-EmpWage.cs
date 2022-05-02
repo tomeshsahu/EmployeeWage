@@ -8,11 +8,11 @@ namespace EmployeeWage
 {
     public class UC4_EmpWage
     {
-        public static void main(String[] args)
-        { 
+        public void UC4()
+        {
             //Constant
             const int Is_FullTime = 1;
-            const int Is_PartTime=2;
+            const int Is_PartTime = 2;
             const int EmpWagePerHrs = 20;
             //Variable
             int EmpHrs = 0;
@@ -20,7 +20,7 @@ namespace EmployeeWage
 
             Random random = new Random();
             int check = random.Next(0, 3);
-            switch(check)
+            switch (check)
             {
                 case Is_FullTime:
                     EmpHrs = 8;
@@ -33,7 +33,7 @@ namespace EmployeeWage
                     break;
             }
             EmpWage = EmpHrs * EmpWagePerHrs;
-            Console.WriteLine($"Total Emp Wage= {EmpWage}");
+            Console.WriteLine($"Total Emp Wage= {EmpWage}"+"\n");
         }
     }
 }

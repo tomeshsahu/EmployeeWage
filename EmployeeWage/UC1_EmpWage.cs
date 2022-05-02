@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmpWageloyeeWage
+namespace EmloyeeWage
 {
     public class UC1_EmpWage
     {
-        public static void main(String[] args)
+        public void UC1()
         {
             const int Is_FullTime = 1;
 
@@ -17,11 +17,11 @@ namespace EmpWageloyeeWage
             int check = random.Next(0, 2);
             if (check == Is_FullTime)
             {
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Employee is Present" + "\n");
             }
             else
             {
-                Console.WriteLine("Employee is Absent");
+                Console.WriteLine("Employee is Absent"+"\n");
             }
         }
     }

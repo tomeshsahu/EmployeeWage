@@ -8,8 +8,8 @@ namespace EmployeeWage
 {
     public class UC3_EmpWage
     {
-       public static void main(String[] args)
-        { 
+        public void UC3()
+        {
             //Constant
             const int Is_FullTime = 1;
             const int Is_PartTime = 2;
@@ -24,7 +24,7 @@ namespace EmployeeWage
             {
                 EmpHrs = 8;
             }
-            else if(check==Is_PartTime)
+            else if (check == Is_PartTime)
             {
                 EmpHrs = 4;
             }
@@ -32,7 +32,7 @@ namespace EmployeeWage
             {
                 EmpHrs = 0;
             }
-            Console.WriteLine($"Employee Wage= { EmpHrs * EmpWagePerHrs}");
+            Console.WriteLine($"Employee Wage= { EmpHrs * EmpWagePerHrs}"+"\n");
         }
     }
 }

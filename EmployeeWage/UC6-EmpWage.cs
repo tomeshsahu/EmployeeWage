@@ -8,7 +8,7 @@ namespace EmployeeWage
 {
     public class UC6_EmpWage
     {
-        public static void main(String[] args)
+        public void UC6()
         {
             //Constant
             const int Is_FullTime = 1;
@@ -47,7 +47,7 @@ namespace EmployeeWage
 
             }
             Console.WriteLine($"Total Hrs = {totalEmpHrs}");
-            Console.WriteLine($"Total Salary= {Salary}");
+            Console.WriteLine($"Total Salary= {Salary}"+"\n");
         }
     }
 }
